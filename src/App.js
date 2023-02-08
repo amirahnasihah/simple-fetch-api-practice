@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import { ItemsCrudContextProvider } from "./context/ItemsCrudContext";
+import Meals from "./components/Meals";
+import Store from "./pages/store";
+import Cart from "./pages/cart";
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className="App">Hello World</h1>
+      <ItemsCrudContextProvider>
+        <Routes>
+          <Route path="/" {...props} element={<Store />} />
+          <Route path="/store" {...props} element={<Meals />} />
+          <Route path="/cart" {...props} element={<Cart />} />
+        </Routes>
+      </ItemsCrudContextProvider>
+      <footer>
+        <h6 className="App">this is footer</h6>
+      </footer>
     </div>
   );
 }

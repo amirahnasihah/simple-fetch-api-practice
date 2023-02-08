@@ -1,0 +1,64 @@
+{
+  "itemsData": [
+    {
+      "id": "1",
+      "name": "TESTING",
+      "description": "this is good stuff. pariatu neque vero? Modi quo laborum asperiores",
+      "price": 10,
+      "url": "https://source.unsplash.com/random"
+    },
+    {
+      "id": "2",
+      "name": "satay",
+      "description": "amazing food",
+      "price": 23,
+      "url": "https://source.unsplash.com/random"
+    },
+    {
+      "id": "3",
+      "name": "Steak",
+      "description": "this is good stuff. pariatu neque vero? Modi quo laborum asperiores",
+      "price": 100,
+      "url": "https://source.unsplash.com/random"
+    },
+    {
+      "id": "4",
+      "name": "Satay",
+      "description": "r illo molestias obcaecati doloremque exercitationem iure",
+      "price": 20,
+      "url": "https://source.unsplash.com/random"
+    },
+    {
+      "id": "5",
+      "name": "Chop",
+      "description": "sit amet consectetur adipisicing elit. Saepe nihil quod delectus mollitia,",
+      "price": 80,
+      "url": "https://source.unsplash.com/random"
+    },
+    {
+      "id": "6",
+      "name": "Bento",
+      "description": "Lorem ipsum dolor, provident quo itaque aperiam?",
+      "price": 15,
+      "url": "https://source.unsplash.com/random"
+    },
+    {
+      "id": "s-Ib98q"
+    },
+    {
+      "id": "gRFgaLa"
+    },
+    {
+      "id": "PzBmcYY"
+    },
+    {
+      "id": "Fjz4p3U"
+    },
+    {
+      "id": "XMmD7H8"
+    },
+    {
+      "id": "RB3zn26"
+    }
+  ]
+}
