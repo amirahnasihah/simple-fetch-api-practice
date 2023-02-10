@@ -1,25 +1,30 @@
+import { Fragment, useContext } from "react";
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
-import { ItemsCrudContextProvider } from "./context/ItemsCrudContext";
-import Meals from "./components/Meals";
-import Store from "./pages/store";
-import Cart from "./pages/cart";
+import { Link, Route, Routes } from "react-router-dom";
+import itemsContext from "./store/items-context";
+import Users from "./pages/Users";
+import Admin from "./pages/Admin";
 
-function App(props) {
+function App() {
+  const itemsCtx = useContext(itemsContext);
   return (
-    <div>
+    <Fragment>
       <h1 className="App">Hello World</h1>
-      <ItemsCrudContextProvider>
-        <Routes>
-          <Route path="/" {...props} element={<Store />} />
-          <Route path="/store" {...props} element={<Meals />} />
-          <Route path="/cart" {...props} element={<Cart />} />
-        </Routes>
-      </ItemsCrudContextProvider>
+      {itemsCtx.switchPage ? <Users /> : <Admin />}
+      <Routes>
+        <Route path="/" element={<Users />} />
+        <Route path="/admin" element={<Admin />} />
+      </Routes>
       <footer>
-        <h6 className="App">this is footer</h6>
+        <h6 className="App">
+          this is footer
+          <Link to={`/`} className="link">
+            {" "}
+            | home
+          </Link>
+        </h6>
       </footer>
-    </div>
+    </Fragment>
   );
 }
 

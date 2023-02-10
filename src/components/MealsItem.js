@@ -8,6 +8,9 @@ const MealsItem = ({ item }) => {
         <img src={thumbnailUrl} alt="img" />
         <div>
           <a href={url} target="_blank" rel="noreferrer" className="link">
+            <span role="img" aria-label="emoji">
+              👉
+            </span>{" "}
             {url}
           </a>
         </div>

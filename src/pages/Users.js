@@ -1,11 +1,12 @@
 import Meals from "../components/Meals";
 
-const Store = () => {
+const Users = () => {
   return (
     <div>
+      <h1>Users Store</h1>
       <Meals />
     </div>
   );
 };
 
-export default Store;
+export default Users;

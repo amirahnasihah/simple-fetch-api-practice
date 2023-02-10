@@ -1,4 +1,4 @@
-import { useItemsCrud } from "../context/ItemsCrudContext";
+import { useItemsCrud } from "../store/ItemsCrudContext";
 import MealsItem from "./MealsItem";
 
 const Meals = () => {

@@ -13,26 +13,15 @@ export function ItemsCrudContextProvider({ children }) {
     0
   );
 
-  // itemsData: [], useState
-  // switchPage: null, useState
-  // addNewItem: (item) => {},
-  // removeItem: (id) => {},
-  // updateItem: (id) => {},
-  // togglePage: () => {},
-  ////// cart ///////
-  // items: [], useState
-  // totalAmount: 0,
-  // addItem: (item) => {},
-  // removeItem: (id) => {},
-
   // RETRIEVE items data from api
   useEffect(() => {
-    const fetchData = async () => {
-      const result = await axios("https://jsonplaceholder.typicode.com/photos");
-      setItemsData(result.data);
-    };
     fetchData();
   }, []);
+
+  const fetchData = async () => {
+    const result = await axios("https://jsonplaceholder.typicode.com/photos");
+    setItemsData(result.data);
+  };
 
   // VALUE
   const value = { itemsData, setItemsData };
